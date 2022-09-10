@@ -5,11 +5,11 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 8.0f;
+    private int speedofplayer ;
 
     void Start()
     {
-        
+        speedofplayer = JsonReaderReal.instance.myPlayerdata.speed;
     }
 
     void Update()
@@ -24,6 +24,6 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 direction = new Vector3(horizontalInput, 0 , verticalInput);
 
-        transform.Translate(direction * speed * Time.deltaTime);
+        transform.Translate(direction * speedofplayer * Time.deltaTime);
     }
 }

@@ -1,0 +1,19 @@
+{
+	"player" : [
+		{
+			"name" : "Warrior",
+			"health" : 100, 
+			"mana" : 20
+		},
+		{
+			"name" : "Ashish",
+			"health" : 100, 
+			"mana" : 23
+		},
+		{
+			"name" : "Nair",
+			"health" : 100, 
+			"mana" : 22
+		}
+	]
+}
