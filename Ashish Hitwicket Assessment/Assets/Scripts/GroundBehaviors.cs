@@ -12,6 +12,7 @@ public class GroundBehaviors : MonoBehaviour
     public float timer = 5f;
     //public bool scored = false;
 
+    public bool scored = false;
 
     void Start()
     {
@@ -31,6 +32,16 @@ public class GroundBehaviors : MonoBehaviour
         if(timer <= 0)
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(!scored  && collision.gameObject.CompareTag("Player"))
+        {
+            scored = true;
+            PlayerMovement.instance.AddScore(1);
+            Debug.Log("Score");
         }
     }
 }

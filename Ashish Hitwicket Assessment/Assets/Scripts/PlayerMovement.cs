@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+    public static PlayerMovement instance;
+
     [SerializeField]
     private float speedofplayer = 4f ;
 
@@ -14,6 +17,13 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField]
     JsonReaderReal jsonmanagertrying;
+
+    public int score;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
     {
@@ -43,5 +53,14 @@ public class PlayerMovement : MonoBehaviour
     {
         cam.transform.position = playertransform.position + offset;
         cam.transform.rotation = Quaternion.Euler(45,0,0);
+    }
+
+    public void AddScore(int points)
+    {
+        score = score + points;
+        UIManager.instance.UpdateScore(score);
+
+        UIManager.instance.CheckForBestScore(score);
+
     }
 }
