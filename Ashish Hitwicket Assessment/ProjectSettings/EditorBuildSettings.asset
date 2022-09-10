@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 074492f176c24ca4da2f371f11d27204
+  - enabled: 1
+    path: Assets/Scenes/DoofusGame.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/EndGame.unity
+    guid: 50b3978e10adafa4e814f926c14db39d
   m_configObjects: {}

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
 
@@ -37,6 +37,12 @@ public class PlayerMovement : MonoBehaviour
         //speedofplayer = JsonReaderReal.instance.myrootjsonobjects.player_data.speed;
         speedofplayer = jsonmanagertrying.myrootjsonobjects.player_data.speed;
         DoofusMovement();
+
+        if(transform.position.y <= -3)
+        {
+            Debug.Log("Dead LOL");
+            SceneManager.LoadScene(2);
+        }
     }
 
     void DoofusMovement()
