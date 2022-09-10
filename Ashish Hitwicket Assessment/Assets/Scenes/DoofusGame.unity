@@ -352,6 +352,61 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!1 &978236415
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 978236417}
+  - component: {fileID: 978236416}
+  m_Layer: 0
+  m_Name: GroundInstantiate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &978236416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978236415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd7f46038107ac49b70c7f48ce61cc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundPlane: {fileID: 9075477295975720149, guid: 56dd7ca0c516eea4b81c7eacddd90887, type: 3}
+  positionArray:
+  - {x: 9.2, y: -1, z: 0}
+  - {x: -9.2, y: -1, z: 0}
+  - {x: 0, y: -1, z: 9.2}
+  - {x: 0, y: -1, z: -9.2}
+--- !u!4 &978236417
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978236415}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.1900125, y: -19.655865, z: 8.861136}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1664121882 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1267633453123357825, guid: 72f4c0c4f004cf84d86c25db23ef2edc, type: 3}
+  m_PrefabInstance: {fileID: 1267633452596995393}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1843688564
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +461,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1267633453123357824, guid: 72f4c0c4f004cf84d86c25db23ef2edc, type: 3}
+      propertyPath: offset.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267633453123357824, guid: 72f4c0c4f004cf84d86c25db23ef2edc, type: 3}
+      propertyPath: offset.z
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267633453123357824, guid: 72f4c0c4f004cf84d86c25db23ef2edc, type: 3}
+      propertyPath: playertransform
+      value: 
+      objectReference: {fileID: 1664121882}
     - target: {fileID: 1267633453123357825, guid: 72f4c0c4f004cf84d86c25db23ef2edc, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -453,6 +520,10 @@ PrefabInstance:
     - target: {fileID: 1267633453123357949, guid: 72f4c0c4f004cf84d86c25db23ef2edc, type: 3}
       propertyPath: m_Name
       value: Doofus_Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267633453123357949, guid: 72f4c0c4f004cf84d86c25db23ef2edc, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72f4c0c4f004cf84d86c25db23ef2edc, type: 3}

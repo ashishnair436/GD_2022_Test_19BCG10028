@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class JsonReaderReal : MonoBehaviour
 {
-    // Start is called before the first frame update
+
 
     public TextAsset jsonTextasset;
 
@@ -15,7 +15,8 @@ public class JsonReaderReal : MonoBehaviour
         instance = this;
     }
 
-    public class player_data
+    [System.Serializable]
+    public class PlayerData
     {
         public int speed;
     }
@@ -28,12 +29,12 @@ public class JsonReaderReal : MonoBehaviour
         public float pulpit_spawn_time;
     }
 
-    public player_data myPlayerdata = new player_data();
+    public PlayerData myPlayerdata = new PlayerData();
     public PulpitData mypulpitData = new PulpitData();
 
     void Start()
     {
-        myPlayerdata = JsonUtility.FromJson<player_data>(jsonTextasset.text);
+        myPlayerdata = JsonUtility.FromJson<PlayerData>(jsonTextasset.text);
         mypulpitData = JsonUtility.FromJson<PulpitData>(jsonTextasset.text);
 
 
