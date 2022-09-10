@@ -362,7 +362,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 978236417}
-  - component: {fileID: 978236416}
+  - component: {fileID: 978236419}
   m_Layer: 0
   m_Name: GroundInstantiate
   m_TagString: Untagged
@@ -370,24 +370,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &978236416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 978236415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bd7f46038107ac49b70c7f48ce61cc4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  groundPlane: {fileID: 9075477295975720149, guid: 56dd7ca0c516eea4b81c7eacddd90887, type: 3}
-  positionArray:
-  - {x: 9.2, y: -1, z: 0}
-  - {x: -9.2, y: -1, z: 0}
-  - {x: 0, y: -1, z: 9.2}
-  - {x: 0, y: -1, z: -9.2}
 --- !u!4 &978236417
 Transform:
   m_ObjectHideFlags: 0
@@ -403,6 +385,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &978236419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978236415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd7f46038107ac49b70c7f48ce61cc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundPlane: {fileID: 9075477295975720149, guid: 56dd7ca0c516eea4b81c7eacddd90887, type: 3}
+  x: 4
 --- !u!1 &1843688564
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,5 +562,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1870743924024872858, guid: 56dd7ca0c516eea4b81c7eacddd90887, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 56dd7ca0c516eea4b81c7eacddd90887, type: 3}

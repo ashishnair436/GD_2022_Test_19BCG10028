@@ -20,5 +20,7 @@ public class DestroyOverTime : MonoBehaviour
         //lifetime = Random.Range(JsonReaderReal.instance.mypulpitData.min_pulpit_destroy_time, JsonReaderReal.instance.mypulpitData.max_pulpit_destroy_time);
        // Destroy(gameObject, lifetime);
 
+
+
     }
 }
