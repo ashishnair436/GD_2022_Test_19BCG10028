@@ -168,12 +168,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jsonTextasset: {fileID: 4900000, guid: 61910acf952251d40b4369dc9558ae17, type: 3}
-  myPlayerdata:
-    speed: 0
-  mypulpitData:
-    min_pulpit_destroy_time: 0
-    max_pulpit_destroy_time: 0
-    pulpit_spawn_time: 0
+  myrootjsonobjects:
+    player_data:
+      speed: 0
+    pulpit_data:
+      min_pulpit_destroy_time: 0
+      max_pulpit_destroy_time: 0
+      pulpit_spawn_time: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,11 +403,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1664121882 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1267633453123357825, guid: 72f4c0c4f004cf84d86c25db23ef2edc, type: 3}
-  m_PrefabInstance: {fileID: 1267633452596995393}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1843688564
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,17 +458,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1267633453123357824, guid: 72f4c0c4f004cf84d86c25db23ef2edc, type: 3}
-      propertyPath: offset.y
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1267633453123357824, guid: 72f4c0c4f004cf84d86c25db23ef2edc, type: 3}
-      propertyPath: offset.z
-      value: -8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1267633453123357824, guid: 72f4c0c4f004cf84d86c25db23ef2edc, type: 3}
-      propertyPath: playertransform
+      propertyPath: jsonmanagertrying
       value: 
-      objectReference: {fileID: 1664121882}
+      objectReference: {fileID: 636208526}
     - target: {fileID: 1267633453123357825, guid: 72f4c0c4f004cf84d86c25db23ef2edc, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -520,10 +508,6 @@ PrefabInstance:
     - target: {fileID: 1267633453123357949, guid: 72f4c0c4f004cf84d86c25db23ef2edc, type: 3}
       propertyPath: m_Name
       value: Doofus_Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1267633453123357949, guid: 72f4c0c4f004cf84d86c25db23ef2edc, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72f4c0c4f004cf84d86c25db23ef2edc, type: 3}

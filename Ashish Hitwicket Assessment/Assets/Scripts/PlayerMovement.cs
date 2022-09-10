@@ -5,22 +5,27 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
-    private int speedofplayer ;
+    private float speedofplayer = 4f ;
 
     private Camera cam;
 
     public Transform playertransform;
     public Vector3 offset;
 
+    [SerializeField]
+    JsonReaderReal jsonmanagertrying;
+
     void Start()
     {
         cam = Camera.main;
-        speedofplayer = JsonReaderReal.instance.myPlayerdata.speed;
+        //speedofplayer = JsonReaderReal.instance.myrootjsonobjects.player_data.speed;
+        speedofplayer = jsonmanagertrying.myrootjsonobjects.player_data.speed;
     }
 
     void Update()
     {
-        speedofplayer = JsonReaderReal.instance.myPlayerdata.speed;
+        //speedofplayer = JsonReaderReal.instance.myrootjsonobjects.player_data.speed;
+        speedofplayer = jsonmanagertrying.myrootjsonobjects.player_data.speed;
         DoofusMovement();
     }
 
