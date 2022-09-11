@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class GroundBehaviors : MonoBehaviour
 {
@@ -14,6 +16,7 @@ public class GroundBehaviors : MonoBehaviour
 
     public bool scored = false;
 
+
     void Start()
     {
         //GameObject jsonmanagerObject = GameObject.Find("JsonReaderlol");
@@ -22,6 +25,7 @@ public class GroundBehaviors : MonoBehaviour
         timermax = JsonReaderReal.instance.myrootjsonobjects.pulpit_data.max_pulpit_destroy_time;
 
         timer = Random.Range(timermin, timermax);
+      
 
     }
 
@@ -33,6 +37,8 @@ public class GroundBehaviors : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -44,4 +50,6 @@ public class GroundBehaviors : MonoBehaviour
             Debug.Log("Score");
         }
     }
+
+    
 }
